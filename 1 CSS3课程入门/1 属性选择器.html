@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>属性选择器</title>
+	<style type="text/css">
+		p{height: 30px;border: 1px solid #000;}
+		p[flower]{background: red;}
+		p[flower="dj"]{color: green;}
+		p[flower~="old"]{color: yellow;}
+		p[flower^='z']{color: pink;}
+		p[flower$="d"]{height: 50px;}
+		p[flower*="l"]{width: 50px;}
+		p[flower|="z"]{color: blue;}
+	</style>
+</head>
+<body>
+	<p flower="dj">杜鹃</p>
+	<p flower="mg old">玫瑰</p>
+	<p flower='md'>牡丹</p>
+	<p flower='zll'>紫罗兰</p>
+	<p flower='z-jh'>菊花</p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>动画animation</title>
+	<style type="text/css">
+	@keyframes move{
+		0%{
+			width: 100px;
+		}
+		50%{
+			width: 1000px;
+		}
+		100%{
+			width: 500px;
+		}
+	}
+	.box{width: 100px;height: 100px;background: red;animation:2s 2s move ease-out infinite;}
+	</style>
+</head>
+<body>
+	<div class="box">
+	</div>
+</body>
+</html>
